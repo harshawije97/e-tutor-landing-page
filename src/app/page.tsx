@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import Image from "next/image";
 import Link from "next/link";
@@ -45,7 +46,7 @@ export default function Home() {
                   target="_blank"
                   className="border-[#437A48] border rounded-lg pl-2 pr-4 py-2 text-white flex gap-x-2 items-center bg-[#437A48] hover:bg-green-800"
                 >
-                  <Image
+                  <img
                     src={"/agro-bot-logo.png"}
                     alt="play"
                     width={118}
@@ -60,7 +61,7 @@ export default function Home() {
                   className="border-[#437A48] border rounded-lg px-4 py-2 text-[#f97316] flex gap-x-2 items-center hover:bg-green-50"
                 >
                   Access
-                  <Image
+                  <img
                     src={"/e-tutor-logo.png"}
                     alt="play"
                     width={118}
@@ -78,17 +79,16 @@ export default function Home() {
             </div>
             <div className="relative lg:pl-24">
               <div className="absolute top-0 right-2 rounded-full -z-10">
-                <Image
+                <img
                   src={"/hero-vectors.svg"}
                   alt="play"
                   width={280}
                   height={200}
                   className="object-cover"
-                  priority
                 />
               </div>
               <figure>
-                <Image
+                <img
                   src={"/hero-image.png"}
                   alt="Student with books"
                   width={500}
@@ -131,7 +131,7 @@ export default function Home() {
                 </>
               }
             >
-              <Image
+              <img
                 src={`/bot-interface.png`}
                 alt="hero"
                 height={790}
